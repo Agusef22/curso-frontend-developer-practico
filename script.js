@@ -127,6 +127,24 @@ productList.push({
     image: "./images/bike.jpeg"
 });
 
+productList.push({
+    name: "Bike",
+    price: 120,
+    image: "./images/bike.jpeg"
+});
+
+productList.push({
+    name: "Televisor",
+    price: 220,
+    image: "./images/bike.jpeg"
+});
+
+productList.push({
+    name: "Notebook",
+    price: 620,
+    image: "./images/bike.jpeg"
+});
+
 /*
 <div class="product-card">
     <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
@@ -149,7 +167,7 @@ const renderProducts = (arr) => {
     
         const productImg = document.createElement("img");
         productImg.setAttribute("src", product.image);
-        productImg.addEventListener("click", openProductDetailAside = () => {
+        productImg.addEventListener("click", () => { 
             const isAsideOpen = !shoppingCartContainer.classList.contains("inactive");
             const isMobileMenuClose = menuMobile.classList.contains("inactive");
             const isDesktopMenuClose = desktopMenu.classList.contains("inactive");
